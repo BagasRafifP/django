@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+app/__init__.py
+app/settings.py
+app/urls.py
+app/views.py
+app/wsgi.py
+vercel_django_starter.egg-info/PKG-INFO
+vercel_django_starter.egg-info/SOURCES.txt
+vercel_django_starter.egg-info/dependency_links.txt
+vercel_django_starter.egg-info/requires.txt
+vercel_django_starter.egg-info/top_level.txt
