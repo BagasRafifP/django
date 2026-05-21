@@ -397,7 +397,7 @@ def gallery(request):
         <body class="bg-zinc-900 text-white p-10">
 
             <h1 class="text-4xl font-bold mb-6">
-                🚗 Gallery Page
+                Gallery Page
             </h1>
 
             <p class="text-zinc-400 mb-8">
