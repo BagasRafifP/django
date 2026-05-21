@@ -6,4 +6,5 @@ from . import views
 urlpatterns = [
     path('', views.index),
     path('api/data', views.api_data),
+    path('gallery', views.gallery),
 ]

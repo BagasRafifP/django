@@ -52,7 +52,7 @@ Skills
 Projects
 </a>
 
-<a href="#gallery" class="hover:text-sky-400 transition">
+<a href="/gallery" class="hover:text-sky-400 transition">
 Gallery
 </a>
 
@@ -381,6 +381,14 @@ GitHub
         content_type='text/html',
     )
 
+def gallery(request):
+    return HttpResponse(
+        """
+        <h1>Gallery Page</h1>
+        <p>Ini adalah halaman gallery.</p>
+        """,
+        content_type='text/html',
+    )
 
 def api_data(request):
     return JsonResponse(
