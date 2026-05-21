@@ -381,11 +381,74 @@ GitHub
         content_type='text/html',
     )
 
+from django.http import HttpResponse
+
 def gallery(request):
     return HttpResponse(
         """
-        <h1>Gallery Page</h1>
-        <p>Ini adalah halaman gallery.</p>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Gallery</title>
+
+            <script src="https://cdn.tailwindcss.com"></script>
+        </head>
+
+        <body class="bg-zinc-900 text-white p-10">
+
+            <h1 class="text-4xl font-bold mb-6">
+                🚗 Gallery Page
+            </h1>
+
+            <p class="text-zinc-400 mb-8">
+                Ini adalah halaman gallery. Karena manusia ga bisa hidup tanpa upload foto mobil dan bilang "rawr spec".
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="bg-zinc-800 rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                        src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"
+                        class="w-full h-52 object-cover"
+                    >
+
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold">
+                            JDM Car
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-800 rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                        src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                        class="w-full h-52 object-cover"
+                    >
+
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold">
+                            Supercar
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-800 rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                        src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c"
+                        class="w-full h-52 object-cover"
+                    >
+
+                    <div class="p-4">
+                        <h2 class="text-xl font-semibold">
+                            Night Racing
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </body>
+        </html>
         """,
         content_type='text/html',
     )
